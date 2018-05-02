@@ -49,17 +49,3 @@ RUN echo "alias run='cd /tmp/VUI && npm start'" >> "/root/.bashrc"
 RUN echo "geth attach http://localhost:8545 <<< \"eth.sendTransaction({from: eth.accounts[0], to:\\\"\$1\\\", value: web3.toWei(\$2, 'ether')})\"" >> "add_money"
 RUN chmod +x "add_money"
 
-#RUN cd VTCR
-#RUN echo "cd VTCR && truffle migrate --reset && cp -r ./build/contracts ../VUI/public && cd ../VUI && npm install && cp ./react-scripts/config/* ./node_modules/react-scripts/config/ && cp ./react-css-modules/dist/extendReactClass.js ./node_modules/react-css-modules/dist/" > "front_end"
-#RUN chmod +x "front_end"
-
-#RUN echo "geth --dev --dev.period 2 --rpc --rpccorsdomain=chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn --networkid 1337" > "back_end"
-#RUN chmod +x "back_end"
-
-#RUN echo "cd /tmp/VUI && npm start" > "run"
-#RUN chmod +x "run"
-
-
-
-
-
