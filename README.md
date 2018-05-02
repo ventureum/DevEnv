@@ -14,14 +14,15 @@ The Development Environment
 ./run_docker.sh
 ```
 
-### now you have two contains.
+now you have two contains.
 
 ### 3, In the first one, run `back_dev` run server
 ```
 back_dev
 ```
 
-### let the server running, switch to the other terminal
+** note: let the server running, switch to the other terminal**
+
 
 ### 3, In the second one, run `front_build` migrate truffle and copy `build` to VUI
 ```
@@ -32,7 +33,7 @@ front_build
 ```
 cd /tmp
 ```
-#### For example, transfer 500,000a to that account.
+#####     For example, transfer 500,000a to that account.
 ```
 ./add_money 0xe681f22B81FaB87B963aa247D0c95320f8731e53 500000
 ```
